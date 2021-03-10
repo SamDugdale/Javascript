@@ -4,9 +4,72 @@
 <title>Javascript lesson</title>
 </head>
 <body>
+<style>
+        body {background-color: gray;}
+        p { color: white; }
+        h2 { color: red; }
+</style>
 
 <h1>My First JavaScript Program</h1>
 <script src="scripts/task1.js"></script>
+ 
+ <script>
+// single comment in script
+
+/* multiple lines 
+comment in 
+script */
+
+const myFirstVariable = 'variable message';
+
+console.log(myFirstVariable);
+
+alert(myFirstVariable);
+
+document.write('<h2>' + myFirstVariable + '<h2>');
+
+
+const firstNumber = 3;
+const secondNumber = 9;
+
+document.write('<p>1st number ' + firstNumber + '</p>'); 
+document.write('<p>2nd number ' + secondNumber + '</p>');
+
+document.write('<p>Negation ' + (-firstNumber) + '</p>');
+
+document.write('<p>Addition: ' + (firstNumber + secondNumber) + '</p>');
+
+document.write('<p>Subtraction: ' + (firstNumber - secondNumber) + '</p>');
+
+document.write('<p>Multiplication: ' + (firstNumber * secondNumber) + '</p>');
+
+document.write('<p>Division: ' + (firstNumber / secondNumber) + '</p>');
+
+document.write('<p>Modulas: ' + (firstNumber % secondNumber) + '</p>');
+
+
+const firstName = 'Meow';
+const secondName = 'Bwah';
+
+const fullName = firstName + ' ' + secondName;
+
+document.write('<p>' + (firstName + ' ' + secondName) + '</p>');
+
+document.write('<p>' + fullName + '</p>');
+
+const bill = 34;
+const tip = (bill * 22) / 100;
+
+const total = (bill + tip).toFixed(2);
+
+document.write(
+                '<p>Your total bill (£' + bill + '), with tip (£' + tip + '), is £' + total + '</p>'
+)
+
+
+ </script>
+
+<p> Bottom of page </p>
 
 </body>
 </html>
