@@ -2,23 +2,31 @@
 <html> 
 <head>
 <title>Javascript lesson</title>
+<link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
-<body>
-<style>
-        body {background-color: gray;}
-        p { color: white; }
-        h2 { color: red; }
-</style>
 
+
+<body>
+<div class="page-wrapper">
+
+<header>
+        
 <h1>My First JavaScript Program</h1>
+
+</header>
 <script src="scripts/task1.js"></script>
- 
+
+<div align="center">
+<h2>Creating a tip calculator</h2>
+<h3>Task 1 + Bonus:</h3>
  <script>
 // single comment in script
 
 /* multiple lines 
 comment in 
 script */
+
+/*
 
 const myFirstVariable = 'variable message';
 
@@ -53,9 +61,13 @@ const secondName = 'Bwah';
 
 const fullName = firstName + ' ' + secondName;
 
+
+
 document.write('<p>' + (firstName + ' ' + secondName) + '</p>');
 
 document.write('<p>' + fullName + '</p>');
+
+*/
 
 const bill = 34;
 const tip = (bill * 22) / 100;
@@ -68,8 +80,18 @@ document.write(
 
 
  </script>
+</div>
+
+<div class="button_cont" align="center">
+<p class="butn" id="calculate" onclick="myFunction()" >Click here for total bill!</p>
+</div>
+
+
+<footer>
 
 <p> Bottom of page </p>
 
+</footer>
+</div>
 </body>
 </html>
