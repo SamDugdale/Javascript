@@ -1,97 +1,51 @@
 <!DOCTYPE html>
-<html> 
+<html>
+
 <head>
-<title>Javascript lesson</title>
-<link rel="stylesheet" type="text/css" href="style.css"></link>
+    <title>Javascript lesson</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </link>
 </head>
 
-
 <body>
-<div class="page-wrapper">
+    <div class="page-wrapper">
 
-<header>
-        
-<h1>My First JavaScript Program</h1>
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+              <div class="w3-col s4">
+                <a href="index.html" class="w3-button w3-block w3-black">Home</a>
+              </div>
+              <div class="w3-col s4">
+                <a href="https://github.com/SamDugdale/Javascript" target="_blank" class="w3-button w3-block w3-black">Repository</a>
+              </div>
+              <div class="w3-col s4">
+                <a href="https://samdugdale.github.io/" class="w3-button w3-block w3-black">Back to Portfolio</a>
+              </div>
+            </div>
+          </div>
+          
+        <header align="center">
 
-</header>
-<script src="scripts/task1.js"></script>
+            <h1>JavaScript Tasks</h1>
 
-<div align="center">
-<h2>Creating a tip calculator</h2>
-<h3>Task 1 + Bonus:</h3>
- <script>
-// single comment in script
+        </header>
 
-/* multiple lines 
-comment in 
-script */
+        <div align="center">
+            <h2>List of tasks</h2>
+            <h3>Task 1 + Bonus: <a href="tipcalculator/index.html">Tip Calulator</a></h3>
+            <h3>Task 1 + Bonus: <a href="tipcalculator/index.html">Tip Calulator</a></h3>
+            <h3>Task 1 + Bonus: <a href="tipcalculator/index.html">Tip Calulator</a></h3>
+            <h3>Task 1 + Bonus: <a href="tipcalculator/index.html">Tip Calulator</a></h3>
 
-/*
+        </div>
+    </div>
 
-const myFirstVariable = 'variable message';
+    <footer>
 
-console.log(myFirstVariable);
+        <p> Bottom of page </p>
 
-alert(myFirstVariable);
-
-document.write('<h2>' + myFirstVariable + '<h2>');
-
-
-const firstNumber = 3;
-const secondNumber = 9;
-
-document.write('<p>1st number ' + firstNumber + '</p>'); 
-document.write('<p>2nd number ' + secondNumber + '</p>');
-
-document.write('<p>Negation ' + (-firstNumber) + '</p>');
-
-document.write('<p>Addition: ' + (firstNumber + secondNumber) + '</p>');
-
-document.write('<p>Subtraction: ' + (firstNumber - secondNumber) + '</p>');
-
-document.write('<p>Multiplication: ' + (firstNumber * secondNumber) + '</p>');
-
-document.write('<p>Division: ' + (firstNumber / secondNumber) + '</p>');
-
-document.write('<p>Modulas: ' + (firstNumber % secondNumber) + '</p>');
-
-
-const firstName = 'Meow';
-const secondName = 'Bwah';
-
-const fullName = firstName + ' ' + secondName;
-
-
-
-document.write('<p>' + (firstName + ' ' + secondName) + '</p>');
-
-document.write('<p>' + fullName + '</p>');
-
-*/
-
-const bill = 34;
-const tip = (bill * 22) / 100;
-
-const total = (bill + tip).toFixed(2);
-
-document.write(
-                '<p>Your total bill (£' + bill + '), with tip (£' + tip + '), is £' + total + '</p>'
-)
-
-
- </script>
-</div>
-
-<div class="button_cont" align="center">
-<p class="butn" id="calculate" onclick="myFunction()" >Click here for total bill!</p>
-</div>
-
-
-<footer>
-
-<p> Bottom of page </p>
-
-</footer>
-</div>
+    </footer>
+    </div>
 </body>
+
 </html>
