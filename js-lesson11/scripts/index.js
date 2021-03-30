@@ -1,13 +1,13 @@
 //function percentageCalculator(number, percentage) {
-  //      return number * percentage / 100;   *same but shortened 
+//      return number * percentage / 100;   *same but shortened 
 
 //task 1
 function percentageCalculator(number, percentage) {
-    let percentage2 = number * percentage / 100; 
-    return percentage2; 
+    let percentage2 = number * percentage / 100;
+    return percentage2;
 }
 
-console.log(percentageCalculator(50, 50));           
+console.log(percentageCalculator(50, 50));
 
 
 //task2
@@ -17,21 +17,22 @@ function drinkOrder(size, drink) {
     switch (drink) {
         case 'cola':
             message = drink + ' is amazing! Thanks for ordering a ' + size + ' one!';
-        //     console.log('thanks for ordering a ' + size + ' ' + drink + '.');
+            //     console.log('thanks for ordering a ' + size + ' ' + drink + '.');
             break;
         case 'lemonade':
-            message =  'Well done! ' + drink + ' is so fresh! Grab a ' + size + ' one!';
+            message = 'Well done! ' + drink + ' is so fresh! Grab a ' + size + ' one!';
 
-    //        console.log('thanks for ordering a ' + size + ' ' + drink + '.');
+            //        console.log('thanks for ordering a ' + size + ' ' + drink + '.');
             break;
         case 'orangeade':
             message = 'Whatever, ' + size + ' ' + drink + ' coming up!';
-    //        console.log('thanks for ordering a ' + size + ' ' + drink + '.');
+            //        console.log('thanks for ordering a ' + size + ' ' + drink + '.');
             break;
-            default:
-                message = 'I have no idea what you are talking about...';
+        default:
+            message = 'I have no idea what you are talking about...';
     }
     console.log(message);
+    document.write(message);
 }
 
 drinkOrder('small', 'lemonade');
@@ -46,33 +47,34 @@ function calculator(number1, number2, operator) {
     switch (operator) {
         case '+':
             message = number1 + number2;
-    //        console.log(number1 + number2);
+            //        console.log(number1 + number2);
             break;
         case '-':
             message = number1 - number2;
-   //         console.log(number1 - number2);
+            //         console.log(number1 - number2);
             break;
         case '*':
             message = number1 * number2;
-    //        console.log(number1 * number2);
+            //        console.log(number1 * number2);
             break;
         case '/':
             message = number1 / number2;
-   //         console.log(number1 / number2);
-            break;   
-            case '%':
+            //         console.log(number1 / number2);
+            break;
+        case '%':
             message = number1 % number2;
-  //         console.log(number1 % number2);
-            break;             
+            //         console.log(number1 % number2);
+            break;
         default:
             console.log('Not valid input...');
     }
     console.log(message);
 }
 
-calculator(10, 100, '+');
-calculator(10, 100, '-');
-calculator(324, 10230, '*');
-calculator(43, 234, '/');
-calculator(324, 42, '%');
-calculator(32423, 324, '@');
+console.log(calculator(10, 100, '+'));
+console.log(calculator(10, 100, '-'));
+console.log(calculator(324, 10230, '*'));
+console.log(calculator(43, 234, '/'));
+console.log(calculator(324, 42, '%'));
+console.log(calculator(32423, 324, '@'));
+console.log(calculator(5, true, '*'));
