@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 16</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <div class="tmp-top">
+            <div class="tmp-row tmp-padding tmp-black">
+              <div class="tmp-col s4">
+                <a href="../index.html" class="tmp-button tmp-block tmp-black">Home</a>
+              </div>
+              <div class="tmp-col s4">
+                <a href="https://github.com/SamDugdale/Javascript" target="_blank" class="tmp-button tmp-block tmp-black">Repository</a>
+              </div>
+              <div class="tmp-col s4">
+                <a href="https://samdugdale.github.io/" class="tmp-button tmp-block tmp-black">Back to Portfolio</a>
+              </div>
+            </div>
+          </div>
+          
+        <header align="center">
+
+          <h1>DOM</h1>
+        </header>
+        <h2>Demo lesson</h2>
+<p>See console and Repository</p>
+
+<label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('dogs')"> Dogs</button>
+  <button class="btn" onclick="filterSelection('cats')"> Cats</button>
+  <button class="btn" onclick="filterSelection('rabbits')"> Rabbits</button>
+  <button class="btn" onclick="filterSelection('pandas')"> Panda</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column dogs">
+    <div class="content">
+      <img src="img/pexels-helena-lopes-2253275.jpg" alt="dogs" style="width:100%">
+      <h4>Golden Retreiver</h4>
+      <p>Golden Doggo</p>
+    </div>
+  </div>
+  <div class="column cats">
+    <div class="content">
+      <img src="img/pexels-tranmautritam-954720.jpg" alt="cats" style="width:100%">
+      <h4>White Cat</h4>
+      <p>White cat on chair</p>
+    </div>
+  </div>
+  <div class="column pandas">
+    <div class="content">
+      <img src="img/pexels-laura-the-explaura-3608263.jpg" alt="pandas" style="width:100%">
+      <h4>Panda on grass</h4>
+      <p>Panda on the green grass</p>
+    </div>
+  </div>
+  <div class="column rabbits">
+    <div class="content">
+      <img src="img/pexels-frank-cone-2439784.jpg" alt="rabbits" style="width:100%">
+      <h4>brown rabbit</h4>
+      <p>brown rabbit wild</p>
+    </div>
+  </div>
+  <div class="column dogs">
+    <div class="content">
+      <img src="img/pexels-la-miko-3671300.jpg" alt="dogs" style="width:100%">
+      <h4>Husky</h4>
+      <p>Husky Dog</p>
+    </div>
+  </div>
+  <div class="column pandas">
+    <div class="content">
+      <img src="img/pexels-erik-mclean-4065800.jpg" alt="pandas" style="width:100%">
+      <h4>Unconventional panda</h4>
+      <p>Panda in the modern world</p>
+    </div>
+  </div>
+  <div class="column rabbits">
+    <div class="content">
+      <img src="img/pexels-roman-odintsov-6897446.jpg" alt="rabbits" style="width:100%">
+      <h4>Easter rabbit</h4>
+      <p>easter rabbit in basket</p>
+    </div>
+  </div>
+
+  <div class="column cats">
+    <div class="content">
+      <img src="img/pexels-fox-755834.jpg" alt="cats" style="width:100%">
+      <h4>Bendy Cat</h4>
+      <p>Very chill bendy cat</p>
+    </div>
+  </div>
+  <div class="column pandas">
+    <div class="content">
+      <img src="img/pexels-isolate-create-4062907.jpg" alt="pandas" style="width:100%">
+      <h4>Panda eating</h4>
+      <p>Panda having a munch</p>
+    </div>
+  </div>
+  <div class="column dogs">
+    <div class="content">
+      <img src="img/pexels-anna-shvets-4587998.jpg" alt="dogs" style="width:100%">
+      <h4>Floppy ears</h4>
+      <p>Smol dog</p>
+    </div>
+  </div>
+  <div class="column rabbits">
+    <div class="content">
+      <img src="img/pexels-sachin-barodia-2476390.jpg" alt="rabbits" style="width:100%">
+      <h4>White and brown rabbit</h4>
+      <p>White and brown rabbit in the wild grass</p>
+    </div>
+  </div>
+  <div class="column cats">
+    <div class="content">
+      <img src="img/pexels-tranmautritam-2113368.jpg" alt="cats" style="width:100%">
+      <h4>Cat with tag</h4>
+      <p>person holding cat with tag</p>
+    </div>
+  </div>
+  <div class="column pandas">
+    <div class="content">
+      <img src="img/pexels-mike-van-schoonderwalt-5504764.jpg" alt="pandas" style="width:100%">
+      <h4>Panda in tree</h4>
+      <p>Panda chilling in the tree</p>
+    </div>
+  </div>
+
+  <div class="column dogs">
+    <div class="content">
+      <img src="img/pexels-cottonbro-3171712.jpg" alt="dogs" style="width:100%">
+      <h4>Shibe</h4>
+      <p>Dodge coin go up!</p>
+    </div>
+  </div>
+  <div class="column cats">
+    <div class="content">
+      <img src="img/pexels-anderson-martins-3885950.jpg" alt="cats" style="width:100%">
+      <h4>Ginger cat</h4>
+      <p>Ginger cat in the shadows</p>
+    </div>
+  </div>
+  <div class="column rabbits">
+    <div class="content">
+      <img src="img/pexels-mati-mango-3820509.jpg" alt="rabbits" style="width:100%">
+      <h4>black and white rabbit</h4>
+      <p>black and white rabbit fluffy</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<script src="scripts/index.js"></script>
+
+
+</body>
+</html>
