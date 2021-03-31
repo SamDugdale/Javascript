@@ -1,11 +1,11 @@
 //FixStart
 // Function fixStart
-//     Pass In: word to manipulate
+//     Pass In: the word to manipulate
 //     CREATE new word and set first letter of the new word to be first letter of the word passing in
 //     LOOP through each letter in the word after first letter
 //       IF current letter is the same as first letter
 //           THEN append * to new word
-//       ELSE 
+//         ELSE 
 //           THEN append letter to new word
 //     Pass Out: new word
 
@@ -18,25 +18,38 @@ const fixStart = (word) => {
             newWord += letter;
         }
     }
+
     return newWord;
 }
 
 console.log(fixStart('babble'));
+document.write(fixStart('babble') + "<br><br>");
 
 
-
-// Reading List
-// CREATE an array of objects. Each object is to have properties title, author and read/not read.
+// Reading List task
+// CREATE array of objects. Each object should have properties title, author and read/not read.
 // LOOP through each object in the array
 //     IF the book has been read
-//         THEN DISPLAY message stating you have read the book (title + author)
-//     ELSE
-//         THEN DISPLAY message stating you have not read the book (title + author)
+//        THEN DISPLAY message stating you have read the book (title + author)
+//       ELSE
+//        THEN DISPLAY message stating you have not read the book (title + author)
 
 let books = [ {
         "Title": "Harry Potter and the Philosophers Stone",
         "Author": "J.K. Rowling",
         "Read": true
+    },
+
+    {
+        "Title": "Wolf Brother",
+        "Author": "Michele Paver",
+        "Read": true
+    },
+
+    {
+        "Title": "Dune",
+        "Author": "Audry Shmorberry",
+        "Read": false
     },
 
     {
@@ -48,9 +61,10 @@ let books = [ {
 for (item of books) {
     msg = "";
     if (item["Read"]) {
-        msg = `You have read ${item["Title"]} by ${item["Author"]}`;
+        msg = `You have read ${item["Title"]} by ${item["Author"] + "<br>"}`;
     } else {
-        msg = `You have not read ${item["Title"]} by ${item["Author"]}`;
+        msg = `You have not read ${item["Title"]} by ${item["Author"] + "<br>"}`;
     }
     console.log(msg);
+    document.write(msg);
 }

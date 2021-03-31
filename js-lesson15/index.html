@@ -2,6 +2,11 @@
 <html>
 
 <head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 15</title>
     <title>Javascript lesson DOM</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     </link>
@@ -11,16 +16,16 @@
 <body>
     <div class="page-wrapper">
 
-        <div class="w3-top">
-            <div class="w3-row w3-padding w3-black">
-              <div class="w3-col s4">
-                <a href="../index.html" class="w3-button w3-block w3-black">Home</a>
+        <div class="tmp-top">
+            <div class="tmp-row tmp-padding tmp-black">
+              <div class="tmp-col s4">
+                <a href="../index.html" class="tmp-button tmp-block tmp-black">Home</a>
               </div>
-              <div class="w3-col s4">
-                <a href="https://github.com/SamDugdale/Javascript" target="_blank" class="w3-button w3-block w3-black">Repository</a>
+              <div class="tmp-col s4">
+                <a href="https://github.com/SamDugdale/Javascript" target="_blank" class="tmp-button tmp-block tmp-black">Repository</a>
               </div>
-              <div class="w3-col s4">
-                <a href="https://samdugdale.github.io/" class="w3-button w3-block w3-black">Back to Portfolio</a>
+              <div class="tmp-col s4">
+                <a href="https://samdugdale.github.io/" class="tmp-button tmp-block tmp-black">Back to Portfolio</a>
               </div>
             </div>
           </div>
@@ -32,23 +37,45 @@
         </header>
 
         <div align="center">
-            <h2>Creating a tip calculator</h2>
-            <h3>Task 1 + Bonus:</h3>
+  
+    <h1 id = "my-h1">Hey World - This line will change</h1>
 
-            <button id="mybtn">click me!</button>
-            
+    <p id="my-p1">This will turn red</p>
+    <p class="my-p2">This will turn blue</p>
+    <div id="main-content">Some new text will show below</div>
+    <br>
+    <button type="button" id="myBtn">Click Me - I Will Disappear</button>
+    <p><span id="hover-p">Hover over me</span></p>
+    <a href="www.google.com" id="my-link">Visit Google: clicking this link will be blocked and not do anything</a>
+    <p><button type="button" id="click-it">Click me too, I will change</button></p>
+    <br><br>
 
-        </div>
-    </div>
+    <h2>Name and Age form:</h2>
+    <form id="myForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
 
+    <h3>Age:</h3>
+        <input type="radio" id=">20" name="age" value="under 20 " checked>
+        <label for=">20">Under 20 years old</label><br>
+        <input type="radio" id="20-50" name="age" value="20-50 ">
+        <label for="20-50">21 - 50 years old</label><br>
+        <input type="radio" id="other" name="age" value="51 or over ">
+        <label for="other">51+ years old</label><br><br>
+
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+  </div>
     <footer>
 
         <p> Bottom of page </p>
 
     </footer>
-    <script src="scripts/dom.js"></script>
-
-    </div>
+</div>
+    </div>  
+      <script src="scripts/dom.js"></script>
 </body>
 
 </html>
